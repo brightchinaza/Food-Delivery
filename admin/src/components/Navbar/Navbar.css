@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar .logo {
+    width: max(10%,80px);
+}
+
+.navbar .profile {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+}
+.navbar h1 {
+    color: tomato;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 10px;
+    margin-bottom: 48px;
+
+    /* gap: -40px;
+    position: absolute; */
+
+}
+span {
+    color: #3d3c3c;
+    font-size: 13px;
+
+}

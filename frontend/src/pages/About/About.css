@@ -1,0 +1,714 @@
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 100px;
+  text-align: center;
+}
+
+/* .about{
+        min-width: 126%; 
+        margin-left: -136.5px;
+       
+    } */
+
+section {
+  background: url("../../assets/circle-scatter-haikei.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section p {
+  font-size: 16px;
+  color: #49557e;
+}
+
+.intro {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.intro h1 {
+  animation: fadeIn 1s forwards;
+  color: #ff6347;
+  letter-spacing: 2px;
+}
+.intro p {
+  animation: fadeIn 1s forwards;
+  color: #49557e;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  align-items: center;
+  width: 100%;
+}
+
+.about-section .right {
+  /* max-width: 40%; */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 120%;
+  margin-left: -180px;
+}
+
+.about-section img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.achievement,
+.team-section,
+.mission-section {
+  width: 125%;
+  margin-left: -12.5%;
+}
+@media (min-width: 100px) {
+  .achievement {
+    margin-left: 0%;
+  }
+}
+
+.image {
+  width: 120%;
+  margin-left: -60px;
+}
+
+.about-section .right h1 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.about-section .right p {
+  font-size: 16px;
+  color: #4a4a4a;
+  width: 120%;
+}
+
+.Story-section {
+  /* background: url('../../assets/wave-haikei.svg'); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: left;
+}
+
+.Story-section h1,
+.mission-section h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.makeorder {
+  display: flex;
+  /* flex-wrap: wrap; */
+  min-height: 80vh;
+  justify-content: center;
+  /* gap: 10px; */
+  /* width: 100%; */
+}
+.makeorder .left {
+  background: #ff6347;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.makeorder .left img {
+  width: 100%;
+  transform: translateY(20%);
+}
+
+.makeorder .left h1 {
+  font-size: 30px;
+  color: #fff;
+  margin: 0px 0px 10px;
+  font-weight: bold;
+  /* max-width: 65%; */
+}
+
+.makeorder .left .orderIcon {
+  margin: 5px 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 5px 0px 0px 0px;
+  fill: #fff;
+}
+
+.windIcon {
+  transform: rotate(180deg);
+}
+
+.makeorder .left span:not(:nth-child(1)) {
+  padding: 10px 20px 10px 10px;
+  text-align: left;
+  width: max-content;
+  background: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.makeorder .left .delivery-image {
+  display: flex;
+  align-items: center;
+  transform: translateY(2 0%);
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+.makeorder .left .delivery-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/trees.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: windBlow 3s infinite ease-in-out;
+}
+
+.makeorder .left .delivery-image::after {
+  content: "";
+  width: 20%;
+  transform: translate(-50%, 3%);
+  height: 100%;
+  position: absolute;
+  background: url("../../assets/web-bike-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.makeorder .right img {
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  object-fit: cover;
+  width: 80%;
+  height: 500px;
+  margin-left: 50px;
+}
+
+.achievement {
+  width: 100%;
+  background-color: tomato;
+  height: 280px;
+  padding-top: 90px;
+  background: url("../../assets/white-circle.svg");
+
+  background-position: center;
+}
+.achievement-col {
+  /* width: 80%; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30;
+  justify-content: space-between;
+  /* margin-left: 80px; */
+  color: #fff;
+
+  /* font-size: max(4.5vw,22px); */
+}
+.achievement-col h1 {
+  font-size: 40px;
+}
+.achievement-col p {
+  font-size: 17px;
+  color: #000;
+  font-weight: 500;
+}
+.number {
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  width: 220px;
+  height: 100px;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+
+.achievement{
+    height: 300px;
+    overflow: hidden;
+  
+}
+.achievement-col {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slide 5s linear infinite;
+  width: 100%;
+
+}
+
+.number {
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    /* background-color: rgba(255, 204, 0, 0.8); */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* box-sizing: border-box; */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+
+@media (max-width: 760px) {
+    .achievement-col {
+        /* animation: none !important; Ensure the animation is fully disabled */
+        white-space: wrap; /* Prevent wrapping of items */
+        display: flex;
+        gap: 0;
+        margin-left: 90px;
+       
+       
+    }
+
+    .number {
+        width: 180px;
+        margin-left: 0;
+        height: 120px;
+        
+        
+    }
+    
+    
+   
+}
+
+@media (max-width: 685px) {
+    .number {
+        width: 170px;
+        height: 100px;
+        margin-top: -40px;
+        
+    }
+    .number h1 {
+        font-size: 30px;
+        margin-top: -5px;
+    }
+    .number p{
+        font-size: 15px;
+        margin-top: -5px;
+    }
+    .achievement {
+        height: 200px;
+    }
+}
+
+@media (max-width: 657px) {
+    .achievement-col {
+        animation: none !important;
+        display: grid;
+        margin-left: 50px;
+        margin-top: -40px;
+
+       
+       
+    }
+    .number {
+        margin-top: 0px;
+        margin-top: 30px;
+        width: 200px;
+        height: 100px;
+        
+    }
+    
+
+    .achievement-row {
+        margin-left: 100px;
+    }
+    
+    
+    .achievement {
+        height: 500px;
+    }
+    
+    
+    
+
+}
+@media (max-width: 657px) {
+
+    .achievement-row {
+        margin-left: 50px;
+    }
+} 
+
+@media (max-width: 657px) {
+    .achievement {
+        display: none;
+    }
+    .makeorder {
+        width: 120%;
+        margin-left: -40px;
+    }
+    .intro{
+      margin-bottom: -70px;
+      padding: 0;
+      margin-top: -20px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+  .about-section {
+    margin-left: 5px;
+  }
+}
+
+
+@media (max-width: 360px) {
+   .makeorder {
+        /* width: 100%; */
+        margin-left: -30px;
+        
+    }
+    .makeorder .left{
+      height: 400px;
+    }
+    .Story-section{
+      width: 120%;
+      margin-left: -30px;
+      margin-top: -200px;
+    }
+    .about-section  {
+      margin-left: 10px;
+    }
+    .about .one {
+      display: none;
+    }
+    .intro{
+      margin-bottom: -90px;
+      padding: 0;
+    }
+    .intro h1{
+      margin-top: -100px;
+    }
+}
+
+@media (max-width: 320px) {
+   .makeorder {
+        margin-left: -20px;
+        /* width: 100%; */
+    }
+   .makeorder .left{
+      height: 300px;
+    }
+    .Story-section{
+      width: 120%;
+      margin-left: -20px;
+      margin-top: -150px;
+    }
+    .about-section  {
+      margin-left: 10px;
+    }
+    .about .one {
+      display: none;
+    }
+    .intro{
+      margin-bottom: -70px;
+      padding: 0;
+    }
+    .intro h1{
+      margin-top: -80px;
+    }
+
+    .mission-section h1 {
+      font-size: 30px;
+    }
+    .team-section-col{
+      margin-top: 10px;
+    }
+
+    .about-section {
+      margin-left: 20px;
+    }
+    .about-section .right h1 {
+      width: 120%;
+    }
+}
+
+
+ 
+
+
+
+
+@keyframes windBlow {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-1deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateX(5px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+.mission-section {
+  background: url("../../assets/white-circle.svg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mission-section h1 {
+  color: #fff;
+}
+.mission-section p {
+  color: #000;
+  font-weight: 500;
+}
+
+.team-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url("../../assets/layered-waves-haikei.svg");
+  background-size: cover;
+  min-height: 100vh;
+  text-align: left;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-section h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .about {
+    width: 100%;
+    gap: 120px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  .navbar {
+    margin: 0px 135px;
+  }
+
+  section {
+    padding: 40px 135px;
+  }
+  .about-section .right {
+    /* max-width: 40%; */
+    gap: 10px;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+  }
+
+  .about-section img {
+    width: 40%;
+  }
+  .mission-section {
+    height: 40vh;
+  }
+  .mission-section h1 {
+    color: #fff;
+  }
+  .mission-section p {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 1280px) {
+  .about-section img {
+    width: 80%;
+    border-radius: 10px;
+  }
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section .right {
+    max-width: 80%;
+  }
+}
+/* @media (min-width: 1020px) {
+    .about{
+        margin-right: 350px;
+        
+       
+    }
+
+} */
+
+@media (max-width: 850px) {
+  .about-section .right {
+    margin-left: -150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .makeorder .right {
+    display: none;
+  }
+  .makeorder .left {
+    /* height: 100%; */
+    flex: 1;
+    width: 100%;
+  }
+  section {
+    padding: 20px 50px;
+  }
+  .achievement,
+  .team-section,
+  .mission-section {
+    width: 125%;
+    margin-left: -12.5%;
+  }
+}
+
+@media (width <= 768px) {
+  .about-section .right {
+    max-width: 80%;
+  }
+  .about-section img {
+    /* width: 80%; */
+    border-radius: 10px;
+  }
+  section {
+    padding: 20px 30px;
+  }
+
+  section p {
+    font-size: 14px;
+    color: #49557e;
+  }
+
+  .makeorder {
+    flex-wrap: wrap;
+  }
+  .intro h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .mission-section {
+    height: 30vh;
+  }
+
+  .Story-section {
+    min-height: 50vh;
+  }
+
+  .team-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .Story-section p > span {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .image {
+    width: 141%;
+    margin-left: -97px;
+    margin-top: -200px;
+  }
+  .about-section .right p {
+    width: 143%;
+  }
+  .about-section .right {
+    margin-left: -250px;
+  }
+  .achievement,
+  .team-section,
+  .mission-section {
+    width: 125%;
+    margin-left: -12.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .image {
+    width: 144%;
+    margin-left: -89px;
+    margin-top: -200px;
+  }
+  .about-section .right p {
+    width: 145%;
+  }
+  .about-section .right {
+    margin-left: -225px;
+  }
+}
+@media (max-width: 513px) {
+  .image {
+    width: 144%;
+    margin-left: -73px;
+  }
+  .about-section .right p {
+    width: 145%;
+  }
+  .about-section .right {
+    margin-left: -190px;
+  }
+}
+
+@media (max-width: 513px) {
+  .image {
+    width: 150%;
+    margin-left: -70px;
+  }
+  .about-section .right {
+    margin-left: -165px;
+  }
+  .achievement,
+  .team-section,
+  .mission-section {
+    width: 125%;
+    margin-left: -12.5%;
+  }
+  .team-section {
+    padding: 20px 10px;
+  }
+}

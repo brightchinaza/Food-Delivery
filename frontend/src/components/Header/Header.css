@@ -1,0 +1,165 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: #EA5F21;
+    background-size: contain;
+    position: relative;
+    border-radius: 20px;
+    /* width: 80%; */
+
+
+   
+} 
+
+button{
+    cursor: pointer;
+}
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vh;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+
+    /* add */
+        margin-left: 400px;
+    /* add end */
+}
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+.header-contents p {
+    color: white;
+    font-size: 1vw;
+}
+.header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+   
+
+}
+
+.video{
+    margin-top: 100px;
+}
+        /* add */
+
+@media (max-width:1220px) {
+
+    .header-contents {
+       
+        margin-left: 0px;
+        
+    }
+    .header{
+        background: url('/header_img.png') no-repeat;
+        height: 34vw;
+        margin: 30px auto;
+        background-size: contain;
+        position: relative;
+
+    }
+    video{
+        display: none;
+    }
+    /* add end */
+
+}
+@media (max-width:1050px) {
+    
+    .header-contents {
+        max-width: 45%;
+        /* add */
+        margin-left: 0px;
+        /* add end */
+    }
+    
+    
+    
+}
+
+@media (max-width:750px) {
+    
+    .header-contents {
+        max-width: 65%;
+        
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+
+   
+    
+    
+}
+
+@media (max-width: 550px) {
+    
+    
+    .header{
+        background: url('/header_img.png') no-repeat;
+        height: 35vw;
+        padding-top: 30px ;
+        background-size: contain;
+        /* position: relative; */
+        border-radius: 20px;
+
+
+    }
+    
+    
+    
+}
+
+@media (max-width: 360px) {
+    
+    
+    .header{
+        background: url('/header_img.png') no-repeat;
+        height: 40vw;
+        
+
+
+    }
+
+
+    
+    
+}
+
+
+@media (max-width: 320px) {
+    
+    
+    .header{
+        background: url('/header_img.png') no-repeat;
+        height: 50vw;
+        /* margin: 30px auto; */
+        /* background-size: contain; */
+        /* position: relative; */
+        border-radius: 20px;
+        
+
+
+
+    }
+    
+    
+}
+
+
+
