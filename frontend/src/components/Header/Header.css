@@ -5,7 +5,6 @@
     background-size: contain;
     position: relative;
     border-radius: 20px;
-    /* width: 80%; */
 
 
    
@@ -148,9 +147,6 @@ button{
     .header{
         background: url('/header_img.png') no-repeat;
         height: 50vw;
-        /* margin: 30px auto; */
-        /* background-size: contain; */
-        /* position: relative; */
         border-radius: 20px;
         
 

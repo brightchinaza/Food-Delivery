@@ -3,15 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 90%; */
     margin: auto;
     
 }
 .navbar h1 {
     color: tomato;
     font-size: 30px;
-    /* add */
-    /* margin-left: -110px; */
+    
 } 
 .nav {
     width: 110%;
@@ -156,13 +154,6 @@
     
 }
 
-/* @media (max-width: 1050px){
-    .navbar-menu {
-        display: none;
-
-    }
-
-} */
 
 
 
