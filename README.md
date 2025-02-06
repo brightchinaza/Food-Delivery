@@ -18,4 +18,4 @@ To learn more about React.js, take a look at the following resources:
 
 
 - [React.js](https://react.dev/learn)
-- [vite.js](https://vite.dev/learn)
+- [Vite.js](https://vite.dev/guide)
